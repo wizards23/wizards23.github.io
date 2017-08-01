@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00aeFF"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/head_fragment"
+            android:name="com.example.app.fragment.Head_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="50px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center_vertical"
+        android:background="@color/bule_main" >
+
+        <TextView
+            android:id="@+id/title_jjName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="晚收款箱交接"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <!-- <ImageView
+            android:id="@+id/wanshou_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="100px"
+            android:src="@drawable/back_cirle" /> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="480px"
+        android:layout_height="80px" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:text="配送线路："
+            android:textColor="@color/red"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/oxianlu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="东丽之行网点1"
+            android:textColor="@color/back"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="480px"
+        android:layout_height="80px" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:text="需要交接款箱数："
+            android:textColor="@color/red"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/kuanxiang_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/back"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="480px"
+        android:layout_height="80px" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:text="扫描款箱数："
+            android:textColor="@color/back"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/wanshou_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:text="0"
+            android:textColor="@color/back"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/view_hr_backgroud" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="款箱编号"
+            android:textColor="@color/red"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="230px" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="230px" >
+            <ListView
+                android:id="@+id/bianhaolistView"
+                android:layout_width="match_parent"
+                android:layout_height="230px" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <TextView
+        android:id="@+id/textWrong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:text="" /> -->
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/wanshou_bt"
+            android:layout_width="150px"
+            android:layout_height="70px"
+            android:textSize="40sp"
+            android:text="确定"
+            android:enabled="false"
+            android:background="@drawable/gray_btn_bg"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/wanshou_cs"
+            android:layout_width="150px"
+            android:layout_height="70px"
+            android:background="@drawable/buttom_selector_bg"
+            android:text="重扫"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

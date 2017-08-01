@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_background"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center" >
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView4"
+                style="@style/px_25"
+                android:layout_width="280px"
+                android:layout_height="wrap_content"
+                android:text="加钞计划编号"
+                android:textColor="@color/back" />
+
+            <TextView
+                android:singleLine="false"
+                android:id="@+id/textView5"
+                style="@style/px_25"
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="钞箱数量"
+                android:textColor="@color/back" />
+            
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/px_25"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="出库时间"
+                android:textColor="@color/back" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listview_waydate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <TextView
+                style="@style/px_25"
+                android:layout_centerInParent="true"
+                android:textColor="@color/back"
+                android:id="@+id/wardate_nottast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂时没有任务" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

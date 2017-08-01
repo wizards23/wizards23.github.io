@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#43536e"
+    android:gravity="center_horizontal"
+    android:id="@+id/loginparent"
+     >
+
+    <LinearLayout
+        
+        android:gravity="center"
+        android:layout_marginBottom="10px"
+        android:id="@+id/netmsg"
+        android:layout_width="430px"
+        android:layout_height="70px"
+        android:orientation="vertical" >
+
+        <TextView
+            android:background="@drawable/login_system_bg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="15px"
+            style="@style/px_30"
+            android:textColor="@color/back"
+            android:id="@+id/netmsgtext2"
+            android:layout_width="430px"
+            android:layout_height="wrap_content"
+            android:text="当前网络连接失败" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:background="@drawable/login_system_bg"
+        android:layout_width="430px"
+        android:layout_height="352px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165px"
+            android:layout_marginTop="18px"
+            android:background="@drawable/edit_bottom"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="70px"
+                android:layout_marginBottom="25px"
+                android:id="@+id/imageView1"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/loginimage" />
+
+            <TextView
+                android:layout_marginTop="13px"
+                android:id="@+id/textView1"
+                style="@style/px_35"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              
+                android:layout_marginBottom="25px"
+                android:text="网点人员登录" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/edit_bottom"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="80px" >
+
+            <EditText
+                style="@style/px_35"               
+                android:singleLine="true"
+                android:paddingLeft="10px"
+                android:textColor="@color/gray"
+                android:id="@+id/wangdian_name1"
+                android:layout_width="match_parent"
+                android:layout_height="65px"
+                android:background="@drawable/wihte_bg"
+                android:drawableLeft="@drawable/user_login_bg"
+                android:ems="10"
+                >
+				<requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+           android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="75px" >
+
+            <EditText
+                style="@style/px_35" 
+                android:singleLine="true"
+                android:paddingLeft="10px"
+                android:textColor="@color/gray"
+                android:id="@+id/wangdian_pwd1"
+                android:layout_width="match_parent"
+                android:layout_height="65px"
+                android:background="@drawable/wihte_bg"
+                android:drawableLeft="@drawable/pwd_bg"
+                android:ems="10"
+                android:inputType="textPassword"
+                
+                >
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="57px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/px_35"
+            android:textColor="@color/white"
+            android:layout_marginRight="70px"
+            android:background="@drawable/buttom_selector_bg"
+            android:id="@+id/wangdian_login_btn1"
+            android:layout_width="170px"
+            android:layout_height="70px"
+            android:text="登录" />
+
+        <Button
+            style="@style/px_35"
+            android:textColor="@color/white"
+            android:background="@drawable/buttom_selector_bg"
+            android:id="@+id/wangdian_login_cancel1"
+            android:layout_width="170px"
+            android:layout_height="70px"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>

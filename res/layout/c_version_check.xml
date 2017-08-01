@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#056fb2"
+     >
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_marginTop="120px"
+            style="@style/px_45"
+            android:textColor="@color/white"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现钞管理系统" />
+         <TextView
+            android:layout_marginTop="80px"
+            style="@style/px_30"
+            android:textColor="@color/white"
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本1.0" />
+
+         <Button
+              android:layout_marginTop="80px"
+             android:background="@drawable/gray_btn_bg"
+             style="@style/px_30"
+             android:textColor="@color/back"
+             android:id="@+id/checkupdate"
+             android:layout_width="200px"
+             android:layout_height="70px"
+             android:text="检查更新" />
+
+         <TextView
+              android:layout_marginTop="80px"
+             style="@style/px_20"
+             android:textColor="@color/white"
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="深圳宝嘉电子设备有限公司2015" />
+
+    </LinearLayout>
+
+</LinearLayout>

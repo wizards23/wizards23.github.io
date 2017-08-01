@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical" >
+
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50px" >
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.ljsw.tjbankpda.yy.fragment.LoginYayunUserInfoFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/u20"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/u22"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/u24" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="上缴周转箱扫描"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/yayun_backS4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/back_change" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="480dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="未扫描:"
+                android:textColor="#DC143C"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/sjsm_wsmiao"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="已扫描:"
+                android:textColor="#DC143C"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/sjsm_ysmiao"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="未扫描周转箱"
+                android:textColor="#DC143C"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已扫描周转箱"
+                android:textColor="#DC143C"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp" >
+
+            <ListView
+                android:id="@+id/sjwsm_listView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:divider="#00000000" >
+            </ListView>
+
+            <ListView
+               
+                android:id="@+id/sjysm_listView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:divider="#00000000" >
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/sj_wrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#DC143C"
+                android:textSize="35sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/u25" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_sjsmQd"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="@drawable/gray_btn_bg"
+                android:enabled="false"
+                android:textColor="#ffffff"
+                android:text="确定"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btn_sjsmQx"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/buttom_selector_bg"
+                android:textColor="#ffffff"
+                android:text="取消"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

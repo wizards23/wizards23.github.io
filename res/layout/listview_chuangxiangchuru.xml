@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+
+        <TextView
+            android:id="@+id/adapter_kname"
+            android:layout_width="320px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            style="@style/px_35"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="10dp"
+            android:text="TextView" />
+        
+        <TextView
+            android:id="@+id/adapter_kuanxiang"
+            style="@style/px_25"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/business_number2"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/adapter_wangdian"
+            style="@style/px_25"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/business_number"
+            android:layout_toLeftOf="@+id/adapter_kuanxiang"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

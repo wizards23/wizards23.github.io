@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:id="@+id/bank_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/PDAsetting"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/users" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280px"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+              
+                style="@style/px_30"
+                android:textColor="@color/white"
+                android:id="@+id/login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="押运员登录" 
+                android:layout_marginTop="40px" />
+
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+             <!-- <ImageView
+                 android:layout_marginRight="10px"
+                 android:id="@+id/ll_yayun_back_bank"
+                 android:layout_width="70px"
+                 android:layout_height="70px"
+                 android:src="@drawable/back_change" /> -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="520px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px" >
+
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="80px"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/blue_title">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请按手指"
+                    style="@style/px_30"
+                	android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300px"
+                android:layout_height="80px"
+                android:background="@color/blue_top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/px_30"
+                    android:textColor="@color/white"
+                    android:id="@+id/yy_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550px"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:textColor="@color/back"
+                    android:text="押运员：" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="250px" >
+
+                <ImageView
+                    android:id="@+id/yy_image"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="60px" >
+
+            <TextView
+                android:id="@+id/yy_fname"
+                android:layout_width="200px"
+                android:layout_height="60px"
+                android:background="@color/blue_text_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="45sp" />        
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+            
+      <LinearLayout
+        android:id="@+id/peisongjiaojie_yanshi"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/gray_msg_bg"
+        android:layout_height="120px" >
+
+        <TextView
+            android:id="@+id/ll_yayun_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="@color/back"
+            android:text="请押运员按手指" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

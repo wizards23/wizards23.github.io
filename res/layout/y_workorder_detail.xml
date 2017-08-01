@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_top"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/f3"
+        android:name="com.fragment.pda.HeadUser_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="50px" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" 
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:layout_weight="4">
+
+           <LinearLayout
+                android:layout_width="72px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical|right" >
+
+                <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/user_order" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:gravity="center_vertical">
+                
+                <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               style="@style/px_30"
+                android:textColor="@color/white"
+                android:text="派工单明细" 
+                android:layout_marginLeft="10px"/>
+            </LinearLayout>
+             
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/orderinfo_backs"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/back_cirle" 
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="15px"
+        android:layout_width="match_parent"
+        android:layout_height="470px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="加钞计划编号:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/webinfo_plan"
+                style="@style/px_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="JN292320304230"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="加钞路线:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/webinfo_way"
+                style="@style/px_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="东丽支行中心库二线"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="计划类型:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/webinfo_type"
+                style="@style/px_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="在行式"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="ATM数量:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/webinfo_atm"
+                style="@style/px_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="钞箱数量:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/webinfo_boxnum"
+                style="@style/px_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="车牌号码:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/webinfo_carbrand"
+                style="@style/px_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="A516"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="加钞日期:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/webinfo_date"
+                style="@style/px_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="2014-5-5"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/atminfo"
+            android:layout_width="380px"
+            android:layout_height="60px"
+            android:text="ATM明细信息" 
+            android:textSize="30px"
+            android:background="@drawable/buttom_selector_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

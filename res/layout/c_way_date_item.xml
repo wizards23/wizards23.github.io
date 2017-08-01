@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="50px"
+    android:orientation="vertical"
+    
+     >
+
+    <LinearLayout
+       	android:background="#646464"
+        android:layout_width="match_parent"
+        android:layout_height="60px" >
+
+        <TextView
+            
+            android:id="@+id/way"
+            style="@style/px_25"
+            android:layout_width="280px"
+            android:layout_height="match_parent"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="JN30113243434"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:gravity="center" 
+            android:background="#f6f6f6"
+            style="@style/px_25"
+            android:textColor="@color/gray"
+            android:id="@+id/plannumber"
+            android:layout_width="50px"
+            android:layout_height="match_parent"
+            android:text="5"
+            android:singleLine="true"
+             />
+
+        <TextView 
+            android:background="#f6f6f6"
+            android:gravity="center_vertical"           
+            style="@style/px_25"
+            android:textColor="@color/gray"
+            android:id="@+id/date"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:text="2014-02-01 16:00:00"
+            android:singleLine="false"
+             />
+
+    </LinearLayout>
+    
+</LinearLayout>

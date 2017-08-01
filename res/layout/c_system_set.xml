@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/blue_top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欢迎你:张三"
+                style="@style/px_25"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10px" 
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+            
+             <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东丽中心支行"
+                android:layout_marginRight="10px"
+                style="@style/px_25"
+                android:textColor="@color/white" 
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="right"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="750px"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:gravity="center"
+        android:background="#2459b2">
+
+        <LinearLayout
+            android:layout_width="380px"
+            android:layout_height="600px">
+
+            <LinearLayout
+                android:layout_width="190px"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/netset"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:src="@drawable/netset" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="网络参数"
+                        style="@style/px_30"
+                		android:textColor="@color/white"
+                        android:layout_marginTop="10px" />
+
+                </LinearLayout>
+
+                  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                      <ImageView
+                          android:id="@+id/rfidreadwrite"
+                          android:layout_width="110px"
+                          android:layout_height="110px"
+                          android:src="@drawable/writeandread" />
+
+                      <TextView
+                          style="@style/px_30"
+                		  android:textColor="@color/white"
+                          android:layout_marginTop="10px"
+                          android:id="@+id/rfidwr"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="RFID读写" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="190px"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:src="@drawable/systemadmin_item" />
+                     <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="参数设置"
+                        style="@style/px_30"
+                		android:textColor="@color/white"
+                        android:layout_marginTop="10px" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50px" >
+
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.ljsw.tjbankpda.qf.fragment.LoginUserInfoFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/blue_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="35px"
+            android:src="@drawable/user_order" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="周转箱信息扫描"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/qf_zhouzhuan_saomiao_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/back_cirle" />
+    </LinearLayout>
+
+    
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:orientation="vertical" >
+            <View android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginLeft="20px" android:layout_marginRight="20px" android:background="@drawable/gradient_white_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周转箱编号："
+                        android:textColor="@color/red"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/qf_zhouzhuan_saomiao_bianhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/back"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/qf_zhouzhuan_queding"
+                    android:layout_width="0dp"
+                    android:layout_height="50px"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/gray_btn_bg"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="确定"
+                    android:enabled="false"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />             
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/gradient_white_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所属配送单："
+                        android:textColor="@color/red"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/qf_zhouzhuan_saomiao_peisongdan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/back"
+                        android:textSize="40sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/gradient_white_gray"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="配送单所属网点："
+                        android:textColor="@color/red"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/qf_zhouzhuan_saomiao_wangdian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/back"
+                        android:textSize="40sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/gradient_white_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="配送单周转箱数量："
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="10px"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/qf_zhouzhuan_saomiao_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/back"
+                        android:textSize="40sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/gradient_white_gray"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="配送单下属订单号："
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="10px"
+                        android:textSize="40sp" />
+                </LinearLayout>
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/gradient_white_gray" />
+            
+        </LinearLayout>
+    
+
+
+                    <ListView
+                        android:id="@+id/qf_zhouzhuan_saomiao_list_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="130px"
+                        android:layout_gravity="center"
+                        android:divider="@color/white" >
+                    </ListView>
+
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/qf_zhouzhuan_saomiao_hedui"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:background="@drawable/buttom_selector_bg"
+           	android:padding="10px"
+            android:text="周转箱核对"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+</LinearLayout>

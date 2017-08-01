@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@color/white"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50px">
+
+    <fragment
+        android:id="@+id/fragment1"
+            android:name="com.ljsw.tjbankpda.db.fragment.TopFragment_db"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+    
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/blue_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="35px"
+            android:src="@drawable/user_order" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="任务列表"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/renwu_update"
+            android:layout_marginTop="5dp"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="80px"
+            android:background="@drawable/replace" />
+
+        <ImageView
+            android:id="@+id/renwu_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="10px"
+            android:src="@drawable/back_cirle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/renwu_wangdian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/back"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/renwu_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/blue_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="35px"
+            android:src="@drawable/user_order" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="出库操作"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/renwuliebiao_chuku_count"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="150px"
+            android:background="@color/red"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/renwu_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="380px"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/renwulistview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/renwu_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/blue_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="35px"
+            android:src="@drawable/user_order" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="入库操作"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/renwuliebiao_ruku_count"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="150px"
+            android:background="@color/red"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/renwu_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="380px"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/renwulistview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

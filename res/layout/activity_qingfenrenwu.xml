@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_qingfenrenwu"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="480px"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="480px"
+                android:layout_height="80px"
+                android:background="@color/bule_main" >
+
+                <ImageView
+                    android:id="@+id/iv_qingfenrenwu_back"
+                    android:layout_width="64px"
+                    android:layout_height="64px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="19dp"
+                    android:src="@drawable/back_change" />
+
+                <ImageView
+                    android:id="@+id/iv_qingfenrenwu_refresh"
+                    android:layout_width="64px"
+                    android:layout_height="64px"
+                    android:layout_alignTop="@+id/iv_qingfenrenwu_back"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@+id/iv_qingfenrenwu_back"
+                    android:src="@drawable/replace" />
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/user_order" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ImageView02"
+                    android:text="任务列表"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00aeFF"
+                android:orientation="vertical" >
+
+                <fragment
+                    android:id="@+id/fg_qingfenrenwu_loginUserInfo"
+                    android:name="com.ljsw.tjbankpda.qf.fragment.LoginUserInfoFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_qingfenrenwu_qingling_title"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/bule_main" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:src="@drawable/user_order" />
+
+                <TextView
+                    android:id="@+id/tv_item_qingfenrenwu_qingling_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="40px"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="请领装箱"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+            <LinearLayout 
+                android:id="@+id/ll_qingfenrenwu_qingling"
+                android:layout_width="match_parent"
+                android:layout_height="443px" 
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px"
+                    android:layout_gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务单号："
+                        android:textColor="@color/red"
+                        android:textSize="35px" />
+
+                    <TextView
+                        android:id="@+id/tv_qingfenrenwu_qingling_orderno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="25px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    android:background="@drawable/gradient_white_gray" />
+                
+                <LinearLayout
+                    android:layout_width="450px"
+                    android:layout_height="wrap_content" 
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textSize="35px"
+                        android:textColor="@color/red"
+                        android:text="线路名称" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="35px"
+                        android:textColor="@color/red"
+                        android:text="网点数量" />
+
+                    </LinearLayout>
+                
+	            <ListView
+	                android:id="@+id/lv_qingfenrenwu_qingling"
+	                android:divider="@color/white"
+	                android:layout_width="450px"
+	                android:layout_gravity="center"
+	                android:dividerHeight="5px"
+	                android:layout_height="235px" >
+	            </ListView>
+	            
+	        
+	            <Button
+	                android:id="@+id/btn_qingfenrenwu_qingling"
+	                android:layout_width="300px"
+	                android:layout_height="60px"
+	                android:layout_gravity="center_horizontal"
+	                android:layout_marginTop="11px"
+	                android:background="@drawable/buttom_selector_bg"
+	                android:text="装箱领款 "
+	                android:textColor="@color/white"
+	                android:textSize="35px" />
+			</LinearLayout>
+            
+
+
+            <RelativeLayout
+                android:id="@+id/rl_qingfenrenwu_shangjiao_title"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="2dp"
+                android:background="@color/bule_main" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:src="@drawable/user_order" />
+
+                <TextView
+                    android:id="@+id/tv_qingfenrenwu_shangjiao_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:text="上缴清分"
+                    android:textSize="40px"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+            
+            <LinearLayout
+                android:id="@+id/ll_qingfenrenwu_shangjiao"
+                android:layout_width="match_parent"
+                android:layout_height="443px" 
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px"
+                    android:layout_gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="35px"
+                        android:textColor="@color/red"
+                        android:text="任务单号：" />
+
+                    <TextView
+                        android:id="@+id/tv_qingfenrenwu_shangjiao_orderno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="35px"
+                        android:textColor="#000000"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px" 
+                    android:background="@drawable/gradient_white_gray"/>
+
+                <LinearLayout
+                    android:layout_width="460px"
+                    android:layout_height="wrap_content" 
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textSize="30px"
+                        android:textColor="@color/red"
+                        android:text="线路名称" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:textSize="30px"
+                        android:textColor="@color/red"
+                        android:text="配送单数" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textSize="30px"
+                        android:textColor="@color/red"
+                        android:text="周转箱数量" />
+
+                </LinearLayout>
+                
+                
+	            <ListView
+	                android:id="@+id/lv_qingfenrenwu_shangjiao"
+	                android:layout_width="match_parent"
+	                android:divider="@color/bule_main"
+	                android:dividerHeight="1px"
+	                android:layout_height="240px" >
+	            </ListView>
+
+                <Button
+                    android:id="@+id/btn_qingfenrenwu_shangjiao"
+                    android:layout_width="300px"
+                    android:layout_height="60px"
+                    android:layout_gravity="center_horizontal"                 
+                    android:background="@drawable/buttom_selector_bg"
+                    android:text="清分领取"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="35px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

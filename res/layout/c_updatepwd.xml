@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#43536e"
+    android:gravity="center_horizontal"
+    android:id="@+id/updatepwd_box"
+     >
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:background="@drawable/login_system_bg"
+        android:layout_marginTop="130px"
+        android:layout_width="430px"
+        android:layout_height="400px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+         
+            
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/edit_bottom"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="70px"
+                android:layout_marginBottom="25px"
+                android:id="@+id/imageView1"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/updateimge" />
+
+            <TextView
+                android:layout_marginTop="16px"
+                android:id="@+id/textView1"
+                style="@style/px_35"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              
+                android:layout_marginBottom="25px"
+                android:text="密码修改" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@drawable/edit_bottom"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_marginLeft="10px"
+                style="@style/px_25"
+                android:textColor="@color/gray"
+                android:id="@+id/uid11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="用 户 编 号 :" />
+
+            <EditText
+                android:id="@+id/uid"
+                android:textColor="@color/gray"
+                android:layout_width="285px"
+                android:layout_height="65px"
+                android:background="@drawable/wihte_bg"
+                style="@style/px_25"
+                android:ems="10" />
+			 <requestFocus />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@drawable/edit_bottom"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_marginLeft="10px"
+                android:id="@+id/pwd11"
+               	style="@style/px_25"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="原    密    码:" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/pwd"
+                android:textColor="@color/gray"
+                android:layout_width="285px"
+                android:layout_height="65px"
+                style="@style/px_25"
+                android:background="@drawable/wihte_bg"
+                android:ems="10" >
+				
+               
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_marginLeft="10px"
+                android:id="@+id/newpwd11"
+                style="@style/px_25"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="新    密    码:" />
+
+            <EditText
+                android:id="@+id/newpwd"
+                android:textColor="@color/gray"
+                android:layout_width="285px"
+                android:layout_height="65px"
+                android:background="@drawable/wihte_bg"
+                android:ems="10"
+                style="@style/px_25"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="57px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/px_35"
+            android:textColor="@color/white"
+            android:layout_marginRight="70px"
+            android:background="@drawable/buttom_selector_bg"
+            android:id="@+id/btnlgoin"
+            android:layout_width="170px"
+            android:layout_height="70px"
+            android:text="确定" />
+
+        <Button
+            style="@style/px_35"
+            android:textColor="@color/white"
+            android:background="@drawable/buttom_selector_bg"
+            android:id="@+id/btncancel"
+            android:layout_width="170px"
+            android:layout_height="70px"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>

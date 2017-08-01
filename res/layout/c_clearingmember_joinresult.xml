@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:paddingLeft="25px"
+            android:layout_marginRight="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/users" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280px"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/px_30"
+                android:textColor="@color/white"
+                android:id="@+id/user_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清分员交接" 
+                android:layout_marginTop="48px" />
+
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+             <ImageView
+                 android:id="@+id/joinrs_back"
+                 android:layout_width="70px"
+                 android:layout_height="70px"
+                 android:src="@drawable/back_cirle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="400px"
+            android:layout_height="200px"
+            android:background="@color/bleu_pressdown"
+            android:gravity="center"
+            android:padding="10px" >
+
+            <ImageView
+                android:id="@+id/result_img"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginRight="20px"
+                android:src="@drawable/sccuss" />
+
+            <TextView
+                android:id="@+id/result_text"
+                style="@style/px_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空钞箱交接完成"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <Button
+            android:background="@drawable/buttom_selector_bg"
+            style="@style/px_35"
+            android:textColor="@color/white"
+            android:id="@+id/sure"
+            android:layout_width="250px"
+            android:layout_height="60px"
+            android:text="确定" />
+
+        </LinearLayout>
+
+   
+
+</LinearLayout>

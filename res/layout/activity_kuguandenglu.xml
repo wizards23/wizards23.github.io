@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:id="@+id/bank_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="80px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/PDAsetting"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/users" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280px"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+              
+                style="@style/px_30"
+                android:textColor="@color/white"
+                android:id="@+id/login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="库管员登录" 
+                android:layout_marginTop="40px" />
+
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+             <!-- <ImageView
+                 android:layout_marginRight="10px"
+                 android:id="@+id/back_bank"
+                 android:layout_width="70px"
+                 android:layout_height="70px"
+                 android:src="@drawable/back_change" /> -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px" >
+
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="80px"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/blue_title">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请按入手指"
+                    style="@style/px_30"
+                	android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300px"
+                android:layout_height="80px"
+                android:background="@color/blue_top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/px_30"
+                    android:textColor="@color/white"
+                    android:id="@+id/resultmsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="240px"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px"
+                    android:orientation="vertical" 
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/username1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="库管员"
+                        style="@style/px_30" 
+                        android:textColor="@color/back" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10px"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="240px"
+                    android:orientation="vertical" >
+
+                    <ImageView                      
+                        android:visibility="visible"
+                        android:id="@+id/finger_left"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                         />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/login_name1"
+                        android:layout_width="200px"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="30px"
+                        android:background="@color/blue_text_bg"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="240px"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px"
+                    android:orientation="vertical" 
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/username2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="库管员"
+                        style="@style/px_30" 
+                        android:textColor="@color/back" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10px"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="240px"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/finger_right"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/login_name2"
+                        android:layout_width="200px"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="30px"
+                        android:background="@color/blue_text_bg"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/px_30"
+            android:textColor="@color/back"
+            android:gravity="center"
+            android:id="@+id/login_bottom_show"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:text="请第一位库管员按压手指..." />
+
+    </LinearLayout>
+
+
+</LinearLayout>

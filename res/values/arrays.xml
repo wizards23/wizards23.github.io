@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prompt_sp">请选择手指</string>
+   <string-array name="finger">
+       <item >大拇指</item>
+       <item >食指</item>
+       <item >中指</item>
+       <item >无名指</item>
+       <item >小拇指</item>
+   </string-array> 
+   
+   
+   <string-array name="arr_lockType">
+    <item >Open</item>
+    <item >Lock</item>
+    <item >Open forever</item>
+    <item >Lock forever</item>
+    </string-array>  
+   <string-array name="arr_sensitivity">
+    <item >High</item>
+    <item >Mid</item>
+    <item >Low</item>
+    <item >Very Low</item>
+    </string-array>  
+    <string-array name="arr_area">
+    <item >China2</item>
+    <item >USA</item>
+    <item >Europe</item>
+    <item >China1</item>
+    <item >Korea</item>
+    </string-array>  
+</resources>

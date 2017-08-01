@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/blue_title"
+        android:layout_width="match_parent"
+        android:layout_height="123px" >
+
+        <ImageView
+            android:layout_marginRight="15px"
+            android:id="@+id/imageView1"
+            android:layout_width="49px"
+            android:layout_height="50px"
+            android:src="@drawable/momey_img" />
+
+        <TextView
+           style="@style/px_30"
+           android:textColor="@color/white"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清机加钞操作" />
+
+        <ImageView
+            android:layout_marginLeft="145px"
+            android:id="@+id/imageView2"
+            android:layout_width="64px"
+            android:layout_height="65px"
+            android:src="@drawable/back_cirle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="53px"
+            android:layout_marginTop="50px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/px_30"
+                android:textColor="@color/red"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清机加钞信息:" />
+
+            <TextView
+                 style="@style/px_30"
+                android:textColor="@color/red"
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="53px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/circle_edit_rudit"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/px_25"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ATM编号:" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:textColor="@color/gray"
+                android:layout_width="320px"
+                android:layout_height="45px"
+                android:background="#dde8f4"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="53px"
+            android:layout_marginTop="45px"
+            android:background="@drawable/circle_edit_rudit"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView4"
+               style="@style/px_25"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="柜员编号:" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:textColor="@color/gray"
+                android:layout_width="320px"
+                android:layout_height="45px"
+                android:background="#dde8f4"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="53px"
+            android:layout_marginTop="45px"
+            android:background="@drawable/circle_edit_rudit"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_marginLeft="10px"
+                android:id="@+id/TextView02"
+                style="@style/px_25"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ATM编号:" />
+
+            <EditText
+                android:id="@+id/EditText02"
+                android:textColor="@color/gray"
+                android:layout_width="320px"
+                android:layout_height="45px"
+                android:background="#dde8f4"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="53px"
+            android:layout_marginTop="45px"
+            android:background="@drawable/circle_edit_rudit"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_marginLeft="10px"
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="钞箱编号:" />
+
+            <EditText
+                android:id="@+id/EditText01"
+                android:textColor="@color/gray"
+                android:layout_width="320px"
+                android:layout_height="45px"
+                android:background="#dde8f4"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="60px"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:layout_marginRight="30px"
+                android:id="@+id/cleanmachine"
+                style="@style/px_35"
+                android:textColor="@color/white"
+                android:layout_width="200px"
+                android:layout_height="60px"
+                android:background="@drawable/buttom_selector_bg"
+                android:text="清机操作" />
+
+            <Button
+                android:id="@+id/addmoney"
+                style="@style/px_35"
+                android:textColor="@color/white"
+                android:layout_width="200px"
+                android:layout_height="60px"
+                android:background="@drawable/buttom_selector_bg"
+                android:text="加钞操作" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

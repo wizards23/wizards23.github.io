@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="请扫描抵质押品编号....."
+                android:textColor="@color/red"
+                android:textSize="40px" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_margin="5px"
+                android:background="@drawable/gradient_white_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65px"
+                android:layout_marginTop="25px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="编号："
+                    android:textColor="@color/red"
+                    android:textSize="35px" />
+
+                <EditText
+                    android:id="@+id/ed_zhuangxiang_dizhi_count"
+                    android:layout_width="300px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/money_count"
+                    android:ems="10"
+                    android:paddingLeft="5px"
+                    android:textSize="35px" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_zhuangxiang_dizhi_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:text="添加"
+                android:textColor="@color/red"
+                android:textSize="35px" />
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_white_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:text="编号"
+                android:textColor="@color/red"
+                android:textSize="40px" />
+
+            <ListView
+                android:id="@+id/lv_zhuangxiang_dizhi_no"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginLeft="60px"
+                android:layout_marginRight="60px" 
+                android:divider="@color/white">
+            </ListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

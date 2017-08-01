@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"    
+    android:id="@+id/menubox"
+     >
+
+    <LinearLayout
+        android:background="#A6e8e8e8"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            
+            style="@style/px_25"
+			android:textColor="@color/blue_title"
+            android:gravity="center"
+            android:id="@+id/menu_exit"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:text="退出" />
+
+        <TextView
+            android:background="#a7a7a7"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:orientation="vertical" />
+     
+        
+         <TextView
+            android:textColor="@color/blue_title"
+            style="@style/px_25"
+            android:gravity="center"
+            android:id="@+id/menu_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</RelativeLayout>

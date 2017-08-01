@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/system_box"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#00aeFF" >
+
+         <fragment 
+            android:name="com.fragment.pda.Head_fragment"
+            android:layout_height="50px"
+            android:layout_width="match_parent"
+            android:id="@+id/head_fragment"
+            />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="750px"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:gravity="center"
+        android:background="#2459b2">
+
+        <LinearLayout
+            android:layout_width="380px"
+            android:layout_height="600px">
+
+            <LinearLayout
+                android:layout_width="190px"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lpda"
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/pda"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:src="@drawable/systemadmin_item"/>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PDA设置"
+                        style="@style/px_30"
+                		android:textColor="@color/white"
+                        android:layout_marginTop="10px" />
+
+                </LinearLayout>
+
+                  <LinearLayout
+                    android:id="@+id/lfinger"
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/finger"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:src="@drawable/fingergather" />
+                    
+                     <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="指纹采集"
+                        style="@style/px_30"
+                		android:textColor="@color/white"
+                        android:layout_marginTop="10px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+					<LinearLayout
+                    android:id="@+id/lupdatepwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/updatepwd"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:src="@drawable/updatepwd" />
+                     <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="修改密码"
+                        style="@style/px_30"
+                		android:textColor="@color/white"
+                        android:layout_marginTop="10px" />
+
+                </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="190px"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+               <!-- <LinearLayout
+                    android:id="@+id/lupdatepwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/updatepwd"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:src="@drawable/updatepwd" />
+                     <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="修改密码"
+                        style="@style/px_30"
+                		android:textColor="@color/white"
+                        android:layout_marginTop="10px" />
+
+                </LinearLayout> -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:orientation="vertical"
+                    android:gravity="center" >
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

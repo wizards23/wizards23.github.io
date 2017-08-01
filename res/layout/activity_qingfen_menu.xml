@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_qingfen_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00aeFF"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/fg_qingfen_menu_loginUserInfo"
+            android:name="com.ljsw.tjbankpda.qf.fragment.LoginUserInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="60px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="750px"
+        android:layout_weight="1"
+        android:background="#2459b2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="380px"
+            android:layout_height="600px" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_qingfen_menu_qingfen"
+                    android:layout_width="190px"
+                    android:layout_height="200px"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_qingfen_menu_qingfen"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:background="@drawable/qingfen"
+                        android:clickable="true" />
+
+                    <TextView
+                        style="@style/px_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:text="清分"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_qingfen_menu_qingfenshenghe"
+                    android:layout_width="190px"
+                    android:layout_height="200px"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_qingfen_menu_qingfenshenghe"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:background="@drawable/qingfenshenhe"
+                        android:clickable="true" />
+
+                    <TextView
+                        style="@style/px_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:text="清分审核"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

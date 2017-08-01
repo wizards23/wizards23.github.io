@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="600px"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:layout_marginRight="8px"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加钞计划编号:" />
+
+        <EditText
+            android:background="#FFFFFF"
+            style="@style/px_22"
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="JN292320304230"
+             />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:layout_marginRight="8px"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加钞路线:" />
+
+        <EditText
+            android:background="#FFFFFF"
+            style="@style/px_22"
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="JN292320304230"
+             />
+
+    </LinearLayout>
+    
+     <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:layout_marginRight="8px"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入库钞箱数量:" />
+
+        <EditText
+            android:background="#FFFFFF"
+            style="@style/px_22"
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="4"
+             />
+
+    </LinearLayout>
+    
+      <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:layout_marginRight="8px"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入库日期:" />
+
+        <EditText
+            android:background="#FFFFFF"
+            style="@style/px_22"
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="2014-5-5"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>

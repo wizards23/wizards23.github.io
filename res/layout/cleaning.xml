@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+   
+     >
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/blue_title"
+        android:layout_width="match_parent"
+        android:layout_height="123px" >
+
+        <ImageView
+            android:layout_marginRight="15px"
+            android:id="@+id/imageView1"
+            android:layout_width="49px"
+            android:layout_height="50px"
+            android:src="@drawable/momey_img" />
+
+        <TextView
+           style="@style/px_30"
+           android:textColor="@color/white"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清机加钞操作" />
+
+        <ImageView
+            android:layout_marginLeft="145px"
+            android:id="@+id/cleaning_back"
+            android:layout_width="64px"
+            android:layout_height="65px"
+            android:src="@drawable/back_cirle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="15px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10px" >
+
+        <ImageView
+            android:id="@+id/clear_fail"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/fail_img"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/clear_sccuss"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/sccuss"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/clear_msg"
+            style="@style/px_30"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_weight="0.71"
+            android:singleLine="false"
+            android:text="正在进行清机加钞操作..."
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15px"
+        android:layout_marginBottom="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/listview_clearing"
+            style="@style/px_35"
+            android:layout_width="match_parent"
+            android:layout_height="188dp" >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_marginRight="20px"
+            android:id="@+id/clearing_sure"
+            style="@style/px_25"
+            android:layout_width="180px"
+            android:layout_height="60px"
+            android:background="@drawable/buttom_selector_bg"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <Button
+            android:visibility="invisible"
+            android:background="@drawable/buttom_selector_bg"
+            android:textColor="@color/white"
+            style="@style/px_25"
+            android:id="@+id/clear_btn"
+            android:layout_width="180px"
+            android:layout_height="60px"
+            android:text="重新加钞" />
+
+    </LinearLayout>
+
+</LinearLayout>

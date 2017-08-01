@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homemenu_box"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/bule_main" >
+
+                <!-- <ImageView
+                    android:id="@+id/churu_back"
+                    android:layout_width="64px"
+                    android:layout_height="64px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="30px"
+                    android:src="@drawable/back_change" /> -->
+
+                <ImageView
+                    android:id="@+id/churu_shuaxin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/refplace_cirle_press" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00aeFF"
+                android:orientation="vertical" >
+
+                <fragment
+                    android:id="@+id/head_fragment"
+                    android:name="com.example.app.fragment.Head_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50px" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/zaochu"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/bule_main" >
+
+                <ImageView
+                    android:id="@+id/updatepass"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:src="@drawable/user_order" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/px_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/updatepass"
+                    android:text="款箱早送出库"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/zaosong_wangdian"
+                    style="@style/px_25"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:layout_toLeftOf="@+id/zaosong_kuanxiangcount"
+                    android:background="@drawable/business_number"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/zaosong_kuanxiangcount"
+                    style="@style/px_25"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/business_number2"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/churu_listView1"
+                android:layout_width="match_parent"
+                android:layout_height="450px" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/wanru"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/bule_main" >
+
+                <ImageView
+                    android:id="@+id/updatepass"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:src="@drawable/user_order2" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/px_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/updatepass"
+                    android:text="款箱晚收入库"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/wanru_wangdian"
+                    style="@style/px_25"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:layout_toLeftOf="@+id/wanru_kuanxiangcount"
+                    android:background="@drawable/business_number"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/wanru_kuanxiangcount"
+                    style="@style/px_25"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/business_number2"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+			<!-- revised By zhangXueWei -->	
+            <ListView
+                android:id="@+id/churu_listView2"
+                android:layout_width="match_parent"
+                android:layout_height="450px"
+                android:visibility="gone" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

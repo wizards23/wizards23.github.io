@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="55px" >
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:id="@+id/boxcount_boxnum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="钞箱编号" />
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:id="@+id/boxcount_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="品牌信息" />
+
+    </LinearLayout>
+
+</LinearLayout>

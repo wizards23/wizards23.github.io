@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:text="清分员："
+        style="@style/px_22"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_fg_qingfendenglu_user1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="傅大青"
+        style="@style/px_22"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_fg_qingfendenglu_user2"
+        android:layout_alignBottom="@+id/tv_fg_qingfendenglu_user2"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/tv_fg_qingfendenglu_user2"
+        android:text="清分员："
+        style="@style/px_22"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_fg_qingfendenglu_user2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_fg_qingfendenglu_user1"
+        android:layout_alignBottom="@+id/tv_fg_qingfendenglu_user1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="傅小青"
+        style="@style/px_22"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

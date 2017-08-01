@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380px"
+    android:layout_height="280px"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+   
+     >
+
+    <ListView
+        android:id="@+id/listview_finger"
+        android:layout_width="380px"
+        android:layout_height="280px" >
+    </ListView>
+
+</LinearLayout>

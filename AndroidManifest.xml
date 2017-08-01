@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pda"
+    android:versionCode="1"
+    android:versionName="1.13" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"      
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:name="com.application.GApplication" >
+        <!-- 主界面 -->
+        <activity
+            android:name="com.main.pda.MainActivity"
+            android:label="@string/app_name" >
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+        </activity>
+        
+         <activity android:name="com.poka.device.MainActivity"></activity>
+        <activity android:name="com.main.pda.HomeMenu"></activity>
+       	<activity android:name="com.main.pda.SystemLogin"></activity>
+       	<activity android:name="com.moneyboxadmin.pda.BankDoublePersonLogin"></activity>
+        
+       	<activity android:name="com.moneyboxadmin.pda.MoneyBoxManager" android:launchMode="singleTask"></activity> 
+       	<activity android:name="com.main.pda.FingerGather"></activity>
+       	<activity android:name="com.main.pda.SystemManager"></activity>
+       	<activity android:name="com.moneyboxadmin.pda.PlanWay"></activity>
+       	<activity android:name="com.moneyboxadmin.pda.BoxDetailInfoDo"></activity>
+       	<activity android:name="com.moneyboxadmin.pda.MoneyBoxDetial"></activity>   
+       	<activity android:name="com.moneyboxadmin.pda.BoxDoDetail"></activity>
+       	<activity android:name="com.moneyboxadmin.pda.LihangJiachaoRenyuanJiaojie"></activity>
+       	<activity android:name="com.moneyboxadmin.pda.ClearerUser" android:launchMode="singleTop"></activity>
+       	<activity android:name="com.moneyboxadmin.pda.JoinResult"></activity>
+       	<activity android:name="com.moneyboxadmin.pda.OutAfterResults"></activity>
+       
+       	<activity android:name="com.moneyboxadmin.pda.BoxAddStop"></activity>
+    	
+       	<activity android:name="com.moneyboxadmin.pda.SupercargoJoin"></activity>
+       	<activity android:name="com.clearadmin.pda.ClearManager" android:launchMode="singleTask"></activity>
+       	<activity android:name="com.clearadmin.pda.BackMoneyBoxCount"></activity>
+       	<activity android:name="com.clearadmin.pda.BackMoneyBoxCountDo"></activity>
+       	<activity android:name="com.out.admin.pda.OrderWork" android:launchMode="singleTask"></activity>
+       	<activity android:name="com.out.admin.pda.OrderWorkInformation"></activity>
+       	<activity android:name="com.out.admin.pda.ATMInformation"></activity>
+       	<activity android:name="com.out.admin.pda.AboutJoin"></activity>
+    
+       		<activity android:name="com.out.admin.pda.WebSiteJoin"></activity>
+       	
+       	<activity android:name="com.main.pda.UpdatePwd"></activity>
+       	<activity android:name="com.main.pda.SystemSet"></activity>
+       	<activity android:name="com.main.pda.VersionCheck"></activity>
+       	<activity android:name="com.out.admin.pda.ClearMachineResult"></activity>
+       	<activity android:name="com.clear.machine.pda.ClearMachineDo"></activity>
+       	<activity android:name="com.clear.machine.pda.ClearMachineLogin"></activity>
+       	<activity android:name="com.out.admin.pda.ClearMachineIing"></activity>
+       	<activity android:name="com.main.pda.ServiceAddress"></activity>
+       	<activity android:name="com.clearadmin.pda.ClearAddMoneyOutDo"></activity>
+       	<activity android:name="a20.cn.uhf.admin.WriteAndRead"></activity>
+         
+       	<service android:name="com.service.NetService">
+       	    <intent-filter>
+       	        <action android:name="network"/>
+       	    </intent-filter>
+       	</service>
+      
+       	<!-- 开机启动广播 -->
+       	 <receiver android:name="com.broadcastreceiver.BroadcastreceiverStart">  
+			    <intent-filter>  
+			        <action android:name="android.intent.action.BOOT_COMPLETED"/>  			  
+			        <category android:name="android.intent.category.HOME" />  
+			    </intent-filter>  
+		 </receiver> 
+		
+       	 	<!-- 监听应用程序安装和卸载广播 -->
+       	 <receiver android:name="com.online.update.biz.InstallAfter">  
+			    <intent-filter>  
+			        <action android:name="android.intent.action.PACKAGE_ADDED"/>  			  
+			        <category android:name="android.intent.category.HOME" /> 
+			        <data android:scheme="package"/> 
+			    </intent-filter>  
+		 </receiver> 
+       	
+       	<activity android:name="com.example.app.activity.ShouyeActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.XitongDengluActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.XianchaoGuanliActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.ATMcaidanActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.KuanxiangCaidanActivity"  android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.example.app.activity.KuguanDengluActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.KuanxiangChuruActivity" android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.example.app.activity.GuanyuActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.XitongGuanliActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.ZhiWenCaiJiActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.ZaoSongshenqingActivity"
+            android:windowSoftInputMode="adjustPan">
+            
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+            
+        </activity>
+        <activity android:name="com.example.app.activity.JiaoJieActivity" android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.example.app.activity.WanShouXiangActivity">
+        </activity>
+        <activity android:name="com.example.app.activity.KuanXiangJiaoJieActivity">
+        </activity>
+        <activity android:name="com.example.app.activity.KuanXiangJiaoJieYaYunActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.KuanXiangZaochuMingxiActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.KuanXiangMingXiActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.KuanXiangChuKuActivity" >
+        </activity>
+        <activity android:name="com.example.app.activity.YayunJiaojieActivity" >            
+        </activity>
+        <activity android:name="com.example.app.activity.KuguanCheckFingerActivity"></activity>
+        <activity android:name="com.example.app.activity.YayunCheckFingerActivity"></activity>
+        <activity android:name="com.example.app.activity.WangdianCheckFingerActivity"></activity>
+        <activity android:name="com.main.pda.Service_Address"></activity>
+        
+        
+        <!-- 三期 -->
+        <activity android:name="com.ljsw.tjbankpda.main.ZhouzhuanxiangMenu" android:launchMode="singleTask">
+          <!--   <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>        
+        <!-- 清分管理Activity -->
+        <activity android:name="com.ljsw.tjbankpda.main.QingfenDengLuAcyivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QingfenMenuActivity"  android:launchMode="singleTask"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QingfenRenwuActivity" ></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QinglingWangdianActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.ljsw.pda3.QinglingWangdian"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QinglingZhuangxiangInfoActivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QinglingZhuangxiangActivity" android:windowSoftInputMode="stateHidden|adjustResize"></activity>   
+        <activity android:name="com.ljsw.tjbankpda.main.QinglingZhouzhuanxiangluruActivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QinglingZhuangxiangTongjiActivity" android:launchMode="singleTask"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QingFenLingQu_qf"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QingFenJinDu_qf"
+           				android:launchMode="singleTask"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.ZhouZhuanXiangSaoMiao_qf" 
+            			android:launchMode="singleTask"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.ZhouZhuanXiangHeDui_qf"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.ShangJiaoQingFen_o_qf"
+            			android:windowSoftInputMode="stateHidden">      
+        </activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QingFenJinDuShuaXin_qf"></activity>
+        <!-- 调拨管理Activity -->
+       <activity android:name="com.ljsw.tjbankpda.db.activity.KuGuanLogin_db" >
+            
+       </activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.RenWuLieBiao_db"
+                        android:launchMode="singleTask"> 
+        </activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.JiHuaDanMingXi_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.DiZhiYaPinSaoMiao_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.QingLingChuKuJiaoJie_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.QingLingZhuangXiangChuKu_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.ShangJiaoQingFenLieBiao_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.QingFenJiHuaMingXi_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.ShangJiaoQingFenSaoMiao_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.QingFenZhouZhuanJiaoJie_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.PeiSongChuKuXianLu_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.PeiSongSaoMiao_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.PeiSongJiaoJie_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.ShangJiaoChuKu_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.ShangJiaoChuKuMingXi_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.ShangJiaoChuKuSaoMiao_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.QingLingZhuangXiangRuKu_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.QingLingZhuangXiangRuKuSaoMiao_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.ShangJiaoRuKu_db"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.ShangJiaoRuKuSaoMiao_db"></activity>
+        
+        <!-- 押运管理Activity -->
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.YayunLoginSAcitivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.YayunRwLbSActivity" android:launchMode="singleTask"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.YaYunRwMingxiActivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.QingLzhxSaomiaoActivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.SjzzxSaomiaoActivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.YyrwJiaojieActivity">           
+        </activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.YyrwJjYanzhengActivity">
+            
+   
+        </activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.YyrwSyliebiaoActivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.QingfenGlyRwActivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.QingfenJhdActivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.QingfenJhdMxActivity" android:launchMode="singleTask"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.ZzXiangKdSmiaoActivity"></activity>
+        
+        <!-- 周转箱信息扫描Activity -->
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.ZhouzXixinSmiaoActivity"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.YaYunYuanDengLu" android:launchMode="singleTop"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.QingFenYuanDengLu"></activity>
+        <activity android:name="com.ljsw.tjbankpda.main.QingfenDengluByUserno" android:launchMode="singleTop"></activity>
+        <activity android:name="com.ljsw.tjbankpda.db.activity.KuGuanYuanDengLu" android:launchMode="singleTop"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.YayunDoubleLogin" android:launchMode="singleTop"></activity>
+        <activity android:name="com.ljsw.tjbankpda.yy.activity.YayunDenglu" android:launchMode="singleTop"></activity>
+       	
+        	 <!-- 查库服务所需要的几个activity -->
+        	 <activity android:name="com.example.app.activity.LookStorageTaskListActivity"></activity>
+        	 <activity android:name="com.example.app.activity.LookStorageTaskDetailActivity"></activity>
+       </application>
+       
+		<uses-permission android:name="android.permission.INTERNET"/>
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"	/>
+    	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"	/>
+    	
+    	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_FIND_LOCATION" />
+		
+		<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+		<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+		
+		<uses-permission android:name="android.permission.WAKE_LOCK"/>
+		<!-- 监听应用程序安装和卸载 -->
+		<uses-permission android:name="android.permission.INTERNET" />    
+        <uses-permission android:name="android.permission.RESTART_PACKAGES"/>    
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/> 
+
+    	
+</manifest>

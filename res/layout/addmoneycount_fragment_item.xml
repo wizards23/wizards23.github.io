@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/moneycount_num_fragment"
+            style="@style/px_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="钞箱编号"
+            android:textColor="@color/back" />
+
+        <TextView
+            android:id="@+id/moneycount_brand_fragment"
+            style="@style/px_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="品牌信息"
+            android:textColor="@color/back" />
+
+        <TextView
+            android:id="@+id/moneycount_money_fragment"
+            style="@style/px_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:text="加钞金额"
+            android:textColor="@color/back" />
+    </LinearLayout>
+
+</LinearLayout>

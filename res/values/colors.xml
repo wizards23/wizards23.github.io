@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bule_main">#0275c4</color>
+    <color name="white">#FFFFFF</color>
+	<color name="gray">#525252</color>
+	<color name="red">#bf2929</color>
+	<color name="back">#000000</color>
+	<color name="blue_title">#1f96e5</color>
+	<color name="blue_top">#00aeff</color>
+	<color name="gray_msg_bg">#d4d4d4</color>
+	<color name="gray_background">#f6f6f6</color>
+	<color name="bleu_pressdown">#dde8f4</color>
+	<color name="transparency">#00000000</color>
+	<color name="transparency_half">#4c00aeff</color>
+	<color name="back_2b">#cc2b2b2b</color>
+	<color name="blue_text_bg">#69b4e9</color>
+</resources>

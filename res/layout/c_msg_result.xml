@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+        android:background="#50858585"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:padding="10px"
+        android:background="@color/bleu_pressdown"
+        android:gravity="center"
+        android:layout_width="400px"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_marginRight="20px"
+            android:id="@+id/result_img"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/sccuss" />
+
+        <TextView
+            android:textColor="@color/red"
+            style="@style/px_30"
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示信息" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400px"
+        android:layout_height="50px" >
+        
+        <TextView
+            android:id="@+id/result_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:gravity="center"
+            android:text="确定"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+        <View 
+            android:id="@+id/result_sep"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+        	android:background="@color/bleu_pressdown"
+            />
+		    
+        <TextView
+            android:id="@+id/result_exit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+</LinearLayout>

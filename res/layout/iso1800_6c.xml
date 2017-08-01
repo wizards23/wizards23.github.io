@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#f0f0f0"
+>
+
+    <LinearLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="EPC:"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewEPC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/membank"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/accesspassword"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/spinner_membank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:orientation="horizontal"
+                android:text="00000000"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/addr"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edittext_addr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:inputType="number"
+                android:text="2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/len"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edittext_length"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:enabled="false"
+                android:inputType="number"
+                android:text="1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+               
+                android:id="@+id/button_read"
+                style="@style/px_30"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:text="@string/read" />      
+
+            <TextView
+                android:textColor="@color/back"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                style="@style/px_25"
+                android:id="@+id/rfidreadtext"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="" />
+
+            <LinearLayout
+                android:gravity="center_vertical|top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:background="@color/blue_title"
+                    android:id="@+id/rfidcopy"
+                    style="@style/px_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="70px"
+                    android:gravity="center"
+                    android:text="↓复制"
+                    android:textColor="@color/back" />
+
+            </LinearLayout>
+
+            <Button             
+                android:id="@+id/button_write"
+                style="@style/px_30"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:text="@string/write" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:focusable="true"  
+   			android:focusableInTouchMode="true"
+            android:id="@+id/LinearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <EditText
+                android:digits="0123456789ABCDEFabcdef"
+                android:id="@+id/edittext_write"
+                style="@style/px_25"
+                android:layout_width="match_parent"
+                android:layout_height="60px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/locktype"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_lock_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button_lock_6c"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/locktag"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/killpassword"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edit_kill_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="00000000"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button_kill_6c"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kill"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:background="@color/blue_title"
+                android:layout_marginTop="50px"
+                android:id="@+id/button_readClear"
+                style="@style/px_30"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:text="@string/clear" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1" >
+
+        <TextView
+            android:id="@+id/textViewreaddata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/readdata"
+            android:visibility="gone" />
+
+        <EditText
+            android:visibility="visible"
+            android:id="@+id/linearLayout_readData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textViewreaddata"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="top"
+            style="@style/px_25" >
+        </EditText>
+
+        <Button
+            android:id="@+id/button_back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

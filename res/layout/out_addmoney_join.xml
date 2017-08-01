@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_top"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/f3"
+        android:name="com.fragment.pda.HeadUser_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="50px" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" 
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:layout_weight="4">
+
+           <LinearLayout
+                android:layout_width="72px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical|right" >
+
+                <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/user_order" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:gravity="center_vertical">
+                
+                <TextView
+                android:id="@+id/webjoin_titel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               style="@style/px_30"
+                android:textColor="@color/white"
+                android:text="网点加钞钞箱交接" 
+                android:layout_marginLeft="10px"/>
+            </LinearLayout>
+             
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/webjoin_back"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/back_cirle" 
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="530px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_marginLeft="10px"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="所在位置:"
+                android:textColor="@color/red" />
+
+            <Spinner
+                android:padding="3px"
+                android:gravity="center"
+                android:layout_marginRight="30px"
+                android:background="@drawable/edit_border"
+                android:spinnerMode="dropdown"
+                android:id="@+id/spinn_out"
+                android:layout_width="330px"
+                android:layout_height="50px"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_marginLeft="10px"
+                style="@style/px_25"
+                android:textColor="@color/white"
+                android:background="@drawable/buttom_selector_bg"
+                android:id="@+id/webjoincheck"
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:text="钞箱交接前检测" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10px"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="需交接加钞钞箱数量:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/join_need_num"
+                style="@style/px_45"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_marginLeft="10px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:text="需交接回收钞箱数量:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/join_now_num"
+                style="@style/px_45"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/gray" />
+            
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:id="@+id/textView1"
+                style="@style/px_25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="品牌信息" />
+
+            <TextView
+                android:id="@+id/editText2"
+                style="@style/px_25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="钞箱编号"
+                android:textColor="@color/red" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280px"
+            android:orientation="vertical" >
+
+            <ListView
+                android:background="@color/transparency"
+                android:id="@+id/listwebjoin"
+                android:layout_width="match_parent"
+                android:layout_height="260px" >
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <Button
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:id="@+id/webatminfo"
+            android:layout_width="380px"
+            android:layout_height="60px"
+            android:text="钞箱交接" 
+            android:textSize="30px"
+            android:background="@drawable/button_gray"/>
+
+    </LinearLayout>
+
+</LinearLayout>

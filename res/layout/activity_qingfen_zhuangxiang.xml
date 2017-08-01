@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_qingfen_zhuangxiang"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="#00aeFF"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/fg_qingfen_zhuangxiang_loginUserInfo"
+            android:name="com.ljsw.tjbankpda.qf.fragment.LoginUserInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="60px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/bule_main" >
+
+        <TextView
+            android:id="@+id/tv_zx_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_zx_imageView1"
+            android:text="请领装箱"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+
+        <ImageView
+            android:id="@+id/iv_zx_imageView1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/user_order" />
+
+        <ImageView
+            android:id="@+id/iv_qingfen_zhuangxiang_back"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:src="@drawable/back_change" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="510px"
+        android:layout_marginBottom="4px"
+        android:layout_marginLeft="3px"
+        android:layout_marginRight="3px"
+        android:layout_marginTop="4px"
+        android:background="@drawable/money_count"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp" >
+
+            <Button
+                android:id="@+id/btn_qingfen_zhuangxiang_xianjin"
+                android:layout_width="0dp"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="现金"
+                android:textSize="35px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/btn_qingfen_zhuangxiang_zhongkong"
+                android:layout_width="0dp"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bottom_gray"
+                android:text="重空凭证"
+                android:textSize="35px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/btn_qingfen_zhuangxiang_dizhi"
+                android:layout_width="0dp"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bottom_gray"
+                android:text="抵制押品"
+                android:textSize="35px" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_qingfen_zhuangxiang_context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px" >
+
+        <Button
+            android:id="@+id/btn_qingfen_zhuangxiang_tongji"
+            android:layout_width="0dp"
+            android:layout_height="60px"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:layout_weight="1"
+            android:background="@drawable/buttom_selector_bg"
+            android:text="装箱统计"
+            android:textColor="@color/white"
+            android:textSize="35px" />
+
+        <Button
+            android:id="@+id/btn_qingfen_zhuangxiang_zhouzhuanxiangluru"
+            android:layout_width="0dp"
+            android:layout_height="60px"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="5px"
+            android:layout_weight="1"
+            android:background="@drawable/buttom_selector_bg"
+            android:text="周转箱录入"
+            android:textColor="@color/white"
+            android:textSize="35px" />
+    </LinearLayout>
+
+</LinearLayout>

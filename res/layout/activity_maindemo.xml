@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+
+
+    <Button
+        android:id="@+id/openRFID"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:padding="30dp"
+        android:text="打开RFID" />
+    <TextView android:id="@+id/qw"
+	    android:layout_width="50dp"
+	    android:layout_height="12dp"
+	    android:textSize="26sp"
+	   />
+    <Button
+        android:id="@+id/closeRFID"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:textSize="26sp"
+    	android:padding="30dp"
+        android:text="停止RFID" />
+     
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="读写标签测试"/>
+    <Button android:id="@+id/readTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取标签"
+        android:layout_marginTop="30dp"
+        android:textSize="26sp"
+        android:padding="30dp"/>
+	<TextView android:id="@+id/showRead"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="26sp"
+	    android:layout_marginLeft="10dp"/>
+
+	<EditText
+	    android:id="@+id/writeLabelTest"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:textSize="26sp" >
+	</EditText>
+
+	<Button
+	    android:id="@+id/writeTest"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="写入标签" 
+	    android:textSize="26sp"
+	    android:padding="30dp"/>
+	
+	<TextView 
+	    android:id="@+id/checkBars"
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    android:layout_gravity="center_horizontal"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="10dp"
+	    android:textColor="#FFFF0000"
+	    style="@style/scanTextSize"/>
+<Button
+	    android:id="@+id/scanOpen"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="70dp"
+	    android:text="打开一维码扫描" 
+	    android:textSize="26sp"
+	    android:padding="30dp"/>
+<Button
+	    android:id="@+id/scanClose"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:text="关闭一维码扫描" 
+	    android:textSize="26sp"
+	    android:padding="30dp"/>
+</LinearLayout>

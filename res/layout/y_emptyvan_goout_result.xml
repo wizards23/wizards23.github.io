@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/blue_top" >
+        
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/f3"
+        android:name="com.fragment.pda.HeadUser_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="50px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" 
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:layout_weight="4">
+
+           <LinearLayout
+                android:layout_width="72px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical|right" >
+
+                <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/out_atm_box" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:gravity="center_vertical">
+                
+                <TextView
+                android:layout_marginBottom="20px"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               style="@style/px_30"
+                android:textColor="@color/white"
+                android:text="未处理业务" 
+                android:layout_marginTop="27px"
+                android:layout_marginLeft="10px"/>
+            </LinearLayout>
+             
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/refplace_cirle" 
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/result_back"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/back_cirle" 
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60px" >
+
+            <TextView
+                android:textColor="@color/back"
+                style="@style/px_30"
+                android:layout_weight="3"
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加钞计划编号" />
+
+            <TextView
+                 android:textColor="@color/back"
+                android:gravity="center"
+                style="@style/px_30"
+                android:layout_weight="2"
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加钞路线" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView               
+                android:id="@+id/listview_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

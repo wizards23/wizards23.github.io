@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.example.app.fragment.Head_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/bule_main" >
+
+        <TextView
+            android:id="@+id/ym_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="13dp"
+            android:text="款箱早送出库明细"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <!-- <ImageView
+            android:id="@+id/zaochu_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/back_cirle" /> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="480px"
+        android:layout_height="80px" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:text="钞车线路："
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_chaoche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="东丽之行中心库一线"
+            android:textColor="@color/back"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/view_hr_backgroud" />
+
+    <LinearLayout
+        android:layout_width="480px"
+        android:layout_height="80px" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:text="网点数量："
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_wangdiancount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="0"
+            android:textColor="@color/back"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/view_hr_backgroud" />
+
+    <LinearLayout
+        android:layout_width="480px"
+        android:layout_height="80px" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:text="款箱数量："
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_kuanxiangcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="0"
+            android:textColor="@color/back"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/view_hr_backgroud" />
+
+    <LinearLayout
+        android:layout_width="480px"
+        android:layout_height="80px" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:text="配送日期："
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="2015-05-01"
+            android:textColor="@color/back"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/view_hr_backgroud" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/zaochu_button1"
+            android:layout_width="180px"
+            android:layout_height="80px"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttom_selector_bg"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="款箱明细" />
+
+        <Button
+            android:id="@+id/zaochu_button2"
+            android:layout_width="180px"
+            android:layout_height="80px"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:background="@drawable/buttom_selector_bg"
+            android:text="出库操作" />
+
+    </LinearLayout>
+
+</LinearLayout>

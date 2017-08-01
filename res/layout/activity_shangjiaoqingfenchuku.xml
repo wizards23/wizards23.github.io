@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@color/white"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50px">
+
+    <fragment
+        android:id="@+id/fragment1"
+            android:name="com.ljsw.tjbankpda.db.fragment.TopFragment_db"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+    
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/blue_title"
+        android:weightSum="4"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="2.8"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="15px"
+                android:src="@drawable/user_order" />
+
+            <TextView
+                android:id="@+id/renwumingxi_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="上缴清分计划单"
+                android:textColor="@color/white"
+                android:textSize="45sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/sj_qingfen_update"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/replace" />
+
+            <ImageView
+                android:id="@+id/sj_qingfen_back"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="10px"
+                android:src="@drawable/back_cirle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计划单号"
+                android:textColor="@color/red"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/buttom_selector_bg" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周转箱数量"
+                android:textColor="@color/red"
+                android:textSize="50sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/buttom_selector_bg" />
+
+   
+
+            <ListView
+                android:id="@+id/sj_qingfen_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+ 
+
+</LinearLayout>

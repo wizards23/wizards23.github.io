@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_msg_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#7D92AC"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="back"
+                    android:src="@drawable/back_cirle_press" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="refresh"
+                    android:src="@drawable/refplace_cirle_press" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="查库员一"
+                android:textSize="20px"
+                android:textColor="@color/back" />
+
+            <TextView
+                android:id="@+id/tv_name_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="查库员二"
+                android:textSize="20px"
+                android:textColor="@color/back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#7D92AC"
+            android:gravity="center"
+            android:text="查库任务单列表"
+            android:textSize="30px"
+            android:textColor="@color/back" />
+
+        <TextView
+            android:id="@+id/tv_none_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="没有任务"
+            android:textColor="@color/red"
+            android:textSize="40sp"
+            android:visibility="gone" />
+        
+         <ListView
+             android:id="@+id/lv_task_list"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" >
+         </ListView>
+
+    </LinearLayout>
+
+    <!-- 正在加载中 -->
+    <LinearLayout
+        android:id="@+id/ll_task_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载中..." />
+    </LinearLayout>
+
+</FrameLayout>

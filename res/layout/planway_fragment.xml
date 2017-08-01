@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_background"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:gravity="center" >
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/plan_num_fra"
+                android:layout_weight="1"
+                style="@style/px_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加钞计划编号"
+                android:textColor="@color/back" />
+
+            <TextView
+                android:id="@+id/plan_content_fra"
+                style="@style/px_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="加钞路线"
+                android:textColor="@color/back" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:id="@+id/way_notdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/boxdetail_notdata"
+                    style="@style/px_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="暂时没有任务"
+                    android:textColor="@color/back" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listview_way"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

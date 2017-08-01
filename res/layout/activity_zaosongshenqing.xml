@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00aeFF"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/head_fragment"
+            android:name="com.example.app.fragment.Head_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="50px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/bule_main"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="早送申请"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <!-- <ImageView
+            android:id="@+id/zcsqBack"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="150px"
+            android:src="@drawable/back_cirle" /> -->
+    </LinearLayout>
+
+	<ScrollView
+	    android:layout_width="480px"
+	    android:layout_height="750px" >
+
+    <LinearLayout
+        android:layout_width="480px"
+        android:layout_height="750px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="480px"
+            android:gravity="center_vertical"
+            android:layout_height="80px" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="配送线路："
+                android:textColor="@color/red"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/z_lineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/back"
+                android:text="东丽之行中心库一线"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/view_hr_backgroud" />
+
+        <LinearLayout
+            android:layout_width="480px"
+            android:gravity="center_vertical"
+            android:layout_height="80px" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="网点名称："
+                android:textColor="@color/red"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/z_netName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东丽之行网点1"
+                android:textColor="@color/back"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/view_hr_backgroud" />
+
+        <LinearLayout
+            android:layout_width="480px"
+            android:gravity="center_vertical"
+            android:layout_height="80px" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="早送日期："
+                android:textColor="@color/red"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/z_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-05-01"
+                android:textColor="@color/back"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnTime"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/time" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="480px"
+            android:layout_height="70px" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="35sp"
+                android:gravity="center"
+                android:text="款箱"
+                android:textColor="@color/back" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="35sp"
+                android:gravity="center"
+                android:text="状态"
+                android:textColor="@color/back" />
+
+            <CheckBox
+                android:id="@+id/zaosong_checkeDbox"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="是否早送"
+                android:textColor="@color/back" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="一次性锁扣"
+                android:textColor="@color/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="480px"
+            android:layout_height="220px"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/zaosqlistView"
+                        android:layout_width="match_parent"
+                        android:layout_height="160px" >
+                    </ListView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="480px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+           
+
+            <Button
+                android:id="@+id/zaochushenqing_button2"
+                android:layout_width="170px"
+                android:layout_height="90px"
+                android:textSize="40sp"
+                android:enabled="false"
+                android:background="@drawable/gray_btn_bg"
+                android:text="确定"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

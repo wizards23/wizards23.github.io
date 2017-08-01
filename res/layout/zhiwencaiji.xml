@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00aeFF"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/head_fragment"
+            android:name="com.example.app.fragment.Head_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="50px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="750px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/zhiwen_back"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@drawable/back_change" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="采集指纹"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="15dp"
+                android:text="姓名："
+                android:textColor="@color/back_2b"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/zhiwen_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignRight="@+id/zhiwen_bianhao"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="14dp"
+                android:text="人员编号："
+                android:textColor="@color/back_2b"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/zhiwen_bianhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView3"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="TextView"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/view_hr_backgroud" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180px" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="14dp"
+                android:text="请选择需要采集的手指："
+                android:textColor="@color/back_2b"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/zhiwen_spinner"
+                android:layout_width="320px"
+                android:layout_height="80px"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="14dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/view_hr_backgroud" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220px" >
+
+            <ImageView
+                android:id="@+id/zhiwen_img1"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="44dp"
+                android:src="@drawable/finger" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_alignTop="@+id/zhiwen_img1"
+                android:layout_toRightOf="@+id/zhiwen_img1"
+                android:src="@drawable/finger" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/view_hr_backgroud" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px" >
+
+            <TextView
+                android:id="@+id/zhiwen_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:text="指纹验证成功!"
+                android:textColor="@color/back_2b"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@+id/zhiwen_success"
+                android:src="@drawable/sccuss" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

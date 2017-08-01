@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llc"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="#00aeFF"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/fg_qingling_zhouzhuanxiangluru_loginUserInfo"
+            android:name="com.ljsw.tjbankpda.qf.fragment.LoginUserInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="60px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/bule_main" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="请领周转箱录入"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:src="@drawable/user_order" />
+
+        <ImageView
+            android:id="@+id/iv_qingling_zhouzhuanxiangluru_back"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:src="@drawable/back_change" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="620px" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="20px"
+                android:text="请扫描周转箱编号....."
+                android:textColor="@color/red"
+                android:textSize="40px" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gradient_white_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="35px"
+                    android:text="编号："
+                    android:textColor="@color/red"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_qingling_zhouzhuanxiangluru_bianhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35px"
+                    android:textColor="@color/back"
+                    android:text=""
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_qingling_zhouzhuanxiangluru_suokoubianhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35px"
+                    android:text="一次性锁扣编号："
+                    android:textColor="@color/red"
+                    android:textSize="35px" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ed_qingling_zhouzhuanxiangluru_suokoubianhao"
+                android:layout_width="400px"
+                android:layout_height="60px"
+                android:layout_gravity="center"
+                android:textSize="35px"
+                android:paddingLeft="5px"
+                android:background="@drawable/money_count"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/tv_qingling_zhouzhuanxiangluru_luru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="10px"
+                android:text="录入"
+                android:textColor="@color/red"
+                android:textSize="35px" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gradient_white_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:text="装箱情况明细："
+                android:textColor="@color/red"
+                android:textSize="35px" />
+
+            <LinearLayout
+                android:layout_width="460px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:gravity="center"
+                    android:text="周转箱编号"
+                    android:textColor="@color/red"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.9"
+                    android:gravity="center"
+                    android:text="锁扣编号"
+                    android:textColor="@color/red"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_qingling_zhouzhuanxiangluru_zhuangxiangInfo"
+                android:layout_width="460px"
+                android:layout_height="30dp"
+                android:layout_gravity="center" >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合计："
+                    android:textColor="@color/back"
+                    android:textSize="35px" />
+
+                <TextView
+                    android:id="@+id/tv_qingling_zhouzhuanxiangluru_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="35px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_white_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px" >
+
+                <Button
+                    android:id="@+id/btn_qingling_zhouzhuanxiangluru_tongji"
+                    android:layout_width="0dp"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttom_selector_bg"
+                    android:text="装箱统计"
+                    android:textColor="@color/white"
+                    android:textSize="35px" />
+
+                <Button
+                    android:id="@+id/btn_qingling_zhouzhuanxiangluru_wancheng"
+                    android:layout_width="0dp"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="25px"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttom_selector_bg"
+                    android:text="装箱完成"
+                    android:textColor="@color/white"
+                    android:textSize="35px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

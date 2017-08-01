@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:id="@+id/ll_qingfen_login"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_qingfen_login_PDAsetting"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_marginLeft="10px"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/users" />
+
+        <TextView
+            android:id="@+id/tv_qingfen_login_title"
+            android:layout_width="300px"
+            android:layout_height="50px"
+            android:text="清分员双人登录"
+            android:textSize="40px"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_qingfen_login_back"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_marginLeft="30px"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_change" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px" >
+
+            <LinearLayout
+                android:layout_width="180px"
+                android:layout_height="80px"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/blue_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请按手指："
+                    android:textSize="30px"
+                	android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300px"
+                android:layout_height="80px"
+                android:background="@color/blue_top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/px_30"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_qingfen_login_resultmsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350px"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="240px"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:orientation="vertical" 
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/px_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="清分员"
+                        android:textColor="@color/back" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10px"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="230px"
+                    android:orientation="vertical" >
+
+                    <ImageView                      
+                        android:visibility="visible"
+                        android:id="@+id/iv_qingfen_login_finger_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                         />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_qingfen_login_name1"
+                        android:layout_width="200px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/blue_text_bg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="240px"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:orientation="vertical" 
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/px_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="清分员"
+                        android:textColor="@color/back" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="10px"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="230px"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/iv_qingfen_login_finger_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_qingfen_login__name2"
+                        android:layout_width="200px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/blue_text_bg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:background="@color/gray_msg_bg" >
+
+        <TextView
+            android:id="@+id/tv_qingfen_login_message"
+            style="@style/px_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请第一位清分员按手指"
+            android:textColor="@color/back" />
+
+    </LinearLayout> 
+
+</LinearLayout>

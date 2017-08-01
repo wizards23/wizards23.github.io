@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="@color/gray_background"
+    android:id="@+id/clearmanager_box"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/blue_title" >
+
+        <LinearLayout
+            android:layout_width="72px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|right" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/manager" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_marginBottom="15px"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/px_30"
+                android:textColor="@color/white"
+                android:text="清分管理" 
+                android:layout_marginTop="25px"
+                android:layout_marginLeft="10px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="63px"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="105px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/back_clearadmin"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/back_cirle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/addmoney"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="钞箱加钞"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/addboxcount"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/countbox"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="回收钞箱清点"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/backboxcount"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/blue_title"
+        android:layout_width="match_parent"
+        android:layout_height="100px" >
+
+        <ImageView
+            android:layout_marginRight="15px"
+            android:id="@+id/imageView1"
+            android:layout_width="49px"
+            android:layout_height="50px"
+            android:src="@drawable/momey_img" />
+
+        <TextView
+           style="@style/px_30"
+           android:textColor="@color/white"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="钞箱加钞操作" />
+
+        <ImageView
+            android:layout_marginLeft="140px"
+            android:id="@+id/addmoney_back"
+            android:layout_width="64px"
+            android:layout_height="65px"
+            android:src="@drawable/back_cirle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:background="@color/gray_msg_bg"
+            android:layout_width="match_parent"
+            android:layout_height="60px" >
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/red"
+                style="@style/px_30"
+                android:id="@+id/domsg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="请扫描钞箱" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="40px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前扫描的钞箱:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/showboxnum"
+                style="@style/px_25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="40px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待加钞钞箱个数:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/waiteaddbox"
+                style="@style/px_25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="40px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/px_25"
+                android:textColor="@color/red"
+                android:id="@+id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加钞计划编号:" />
+
+            <TextView
+                android:gravity="center_vertical"
+                style="@style/px_25"
+                android:textColor="@color/back"
+                android:id="@+id/addmoneyout_plan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="53px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/circle_edit_rudit"
+            android:gravity="center" >
+
+            <TextView
+                android:textColor="@color/red"
+                android:id="@+id/textView3"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="钞箱编号:" />
+
+            <TextView
+                style="@style/px_30"
+                android:id="@+id/addmoneyout_planNum"
+                android:textColor="@color/back"
+                android:layout_width="320px"
+                android:layout_height="45px"
+                android:background="#dde8f4"
+                android:ems="10" >
+
+                <requestFocus />
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="53px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/circle_edit_rudit"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_marginLeft="10px"
+                android:id="@+id/TextView02"
+                style="@style/px_25"
+                android:textColor="@color/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加钞余额:" />
+
+            <TextView
+                style="@style/px_30"
+                android:id="@+id/addmoenyout_money"
+                android:textColor="@color/back"
+                android:layout_width="280px"
+                android:layout_height="45px"
+                android:background="#dde8f4"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450px"
+            android:layout_height="53px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/circle_edit_rudit"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                style="@style/px_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="当前扫描总额:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/addmoneytoal"
+                style="@style/px_25"
+                android:textColor="@color/red"
+                android:layout_width="290px"
+                android:layout_height="45px"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210px"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listview_addmoney"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:enabled="false"
+                android:id="@+id/addmoney_suer_out"
+                style="@style/px_35"
+                android:textColor="@color/white"
+                android:layout_width="300px"
+                android:layout_height="60px"
+                android:background="@drawable/button_gray"
+                android:text="确定" />
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

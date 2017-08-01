@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        	android:background="@color/blue_top"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/head_user1"
+                style="@style/px_22"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10px"
+                android:layout_weight="1"
+                android:text="库管员:张三" />
+
+            <TextView
+                android:id="@+id/head_user2"
+                style="@style/px_22"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10px"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="库管员:张三" />
+        </LinearLayout>
+</LinearLayout>

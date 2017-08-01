@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50px" >
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.ljsw.tjbankpda.yy.fragment.LoginYayunUserInfoFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/u20"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/blue_title"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/u24" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="押运任务明细"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />            
+            <ImageView
+                android:id="@+id/yayun_backS2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="120dp"
+                android:src="@drawable/back_change" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textColor="#DC143C"
+                android:textSize="40sp"
+                android:layout_marginLeft="20sp"
+                android:text="机构名称:" />
+
+            <TextView
+                android:id="@+id/yy_wdName"
+               	android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="@color/back"
+                android:text="西青网点一" />
+
+        </LinearLayout>
+        
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/u25" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textColor="#DC143C"
+                android:textSize="40sp"
+                android:layout_marginLeft="20sp"
+                android:text="所属线路:" />
+
+            <TextView
+                android:id="@+id/yy_xlName"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="@color/back"
+                android:text="西青支行一" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/u25" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textColor="#DC143C"
+                android:textSize="40sp"
+                android:layout_marginLeft="-10sp"
+                android:text="上缴周转箱数量:" />
+
+            <TextView
+                android:id="@+id/yy_sjNum"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="@color/back"
+                android:text="10" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/u25" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textColor="#DC143C"
+                android:layout_marginLeft="-10sp"
+                android:textSize="40sp"
+                android:text="请领周转箱数量:" />
+
+            <TextView
+                android:id="@+id/yy_qlNum"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/back"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/u25" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4"
+               android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textColor="#DC143C"
+                android:textSize="40sp"
+                android:layout_marginLeft="20sp"
+                android:text="运送日期:" />
+
+            <TextView
+                android:id="@+id/yy_xlDate"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="@color/back"
+                android:text="2015-6-10" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yy_saomiao"
+            android:layout_width="200px"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttom_selector_bg"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:text="周转箱扫描" />        
+    </LinearLayout>
+
+</LinearLayout>

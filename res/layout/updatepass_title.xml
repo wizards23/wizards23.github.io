@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="10"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:background="@color/back_2b" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/replace" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:text="密码修改" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:gravity="center_vertical"
+         >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/back_2b"
+            android:text="原密码：" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginLeft="25dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittext_biankuang"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+        
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/view_hr_backgroud"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/back_2b"
+            android:text="新密码：" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:background="@drawable/edittext_biankuang"
+            android:layout_marginLeft="25dp"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+        
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/view_hr_backgroud"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:gravity="center_vertical"
+         >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/back_2b"
+            android:text="再次输入：" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:background="@drawable/edittext_biankuang"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="5dp"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+        
+    </LinearLayout>
+
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/view_hr_backgroud"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="120px" >
+
+        <Button
+            android:id="@+id/dialig_bt1"
+            android:layout_width="180px"
+            android:layout_height="80px"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/buttom_selector_bg"
+            android:text="确认" />
+
+        <Button
+            android:id="@+id/dialig_bt2"
+            android:layout_width="180px"
+            android:layout_height="80px"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/buttom_selector_bg"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/orderwork_box"
+     >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_top"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/f3"
+        android:name="com.fragment.pda.HeadUser_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="50px" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" 
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:layout_weight="4">
+
+           <LinearLayout
+                android:layout_width="72px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical|right" >
+
+                <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/user_order" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:gravity="center_vertical">
+                
+                <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/px_35"
+                android:textColor="@color/white"
+                android:text="派工单" 
+                android:layout_marginLeft="10px"/>
+            </LinearLayout>
+             
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/order_refresh"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/refplace_cirle" 
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/order_back"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/back_cirle" 
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/orderwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/webway"
+                style="@style/px_30"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:gravity="center_vertical"
+                android:paddingLeft="20px"
+                android:text=""
+                android:textColor="@color/back" />
+
+            <TextView
+                android:id="@+id/webplan"
+                style="@style/px_30"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:gravity="center_vertical"
+                android:paddingLeft="20px"
+                android:text=""
+                android:textColor="@color/back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textColor="@color/back"
+            style="@style/px_30"
+            android:id="@+id/tast_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无没有任务" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" 
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:layout_weight="4">
+
+           <LinearLayout
+                android:layout_width="72px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical|right" >
+
+                <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/content_join" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:gravity="center_vertical">
+                
+                <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/px_30"
+                android:textColor="@color/white"
+                android:text="钞箱交接" 
+                android:layout_marginLeft="10px"/>
+            </LinearLayout>
+             
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/webadd"
+                style="@style/px_30"
+                android:layout_width="400px"
+                android:layout_height="60px"
+                android:layout_marginLeft="20px"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/webaddnum"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:id="@+id/webback"
+                style="@style/px_30"
+                android:layout_width="400px"
+                android:layout_height="60px"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/webbacknum"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@color/blue_title"
+        android:orientation="horizontal" 
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:layout_weight="4">
+
+           <LinearLayout
+                android:layout_width="72px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical|right" >
+
+                <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/remebertext" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:gravity="center_vertical">
+                
+                <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/px_30"
+                android:textColor="@color/white"
+                android:text="交接情况" 
+                android:layout_marginLeft="10px"/>
+            </LinearLayout>
+             
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/aboutjoin"
+            style="@style/px_30"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="交接情况浏览"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

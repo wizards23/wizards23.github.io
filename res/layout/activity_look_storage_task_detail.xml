@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_msg_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7D92AC"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:onClick="back"
+                android:src="@drawable/back_cirle_press" />
+
+            <TextView
+                android:id="@+id/tv_corp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="机构"
+                android:textColor="@color/back" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="任务单号: "
+                android:textColor="@color/back"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/tv_task_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="00000000"
+                android:textColor="@color/red"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查库员一"
+                android:textColor="@color/back"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/tv_name_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查库员二"
+                android:textColor="@color/back"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 对应底部菜单相对应的2个区域，只显示其中一个 -->
+            <!-- 对应任务明细 -->
+
+            <LinearLayout
+                android:id="@+id/ll_task_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="未清点数量: "
+                        android:textColor="@color/back"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:id="@+id/tv_untreat_box_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="已清点数量: "
+                        android:textColor="@color/back"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:id="@+id/tv_completed_box_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:textSize="20px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="箱子类型"
+                        android:textColor="@color/back"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="箱子编号"
+                        android:textColor="@color/back"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="清点状态"
+                        android:textColor="@color/back"
+                        android:textSize="20px" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_task_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px" >
+                </ListView>
+            </LinearLayout>
+
+            <!-- 对应清点进度菜单 -->
+
+            <LinearLayout
+                android:id="@+id/ll_task_process"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <!-- 清点进度表格 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/blue_text_bg"
+                    android:orientation="vertical" >
+
+                    <!-- 第一行标题 -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/back" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:text="钞箱类型"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:text="总数"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:text="已查数量"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:text="待查数量"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+                    </LinearLayout>
+                    <!-- 第二行ATM钞箱 -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/back" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:text="ATM钞箱"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:id="@+id/tv_atm_total"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:id="@+id/tv_atm_completed"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:id="@+id/tv_atm_untreated"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+                    </LinearLayout>
+                    <!-- 第三行周转箱 -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/back" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:text="周转箱"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:id="@+id/tv_zz_total"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:id="@+id/tv_zz_completed"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:id="@+id/tv_zz_untreated"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+                    </LinearLayout>
+                    <!-- 第四行款箱 -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/back" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:text="款箱"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:id="@+id/tv_kx_total"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:id="@+id/tv_kx_completed"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+
+                        <TextView
+                            android:id="@+id/tv_kx_untreated"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:textColor="@color/back"
+                            android:textSize="20px" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/back" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/back" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_task_commit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:onClick="commitTask"
+                        android:text="提交任务"
+                        android:textSize="20px" />
+                </LinearLayout>
+            </LinearLayout>
+            
+		    <!-- 正在加载中 -->
+		    <LinearLayout
+		        android:id="@+id/ll_task_loading"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:gravity="center"
+		        android:orientation="vertical"
+		        android:visibility="gone" >
+		
+		        <ProgressBar
+		            style="?android:attr/progressBarStyleLarge"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="正在加载中..." />
+		    </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 底部菜单 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#9999FF" >
+
+        <TextView
+            android:id="@+id/tv_task_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray_msg_bg"
+            android:gravity="center"
+            android:text="任务明细"
+            android:textColor="@color/back"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_task_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_title"
+            android:gravity="center"
+            android:text="清点进度"
+            android:textColor="@color/back"
+            android:textSize="30px" />
+    </LinearLayout>
+
+</RelativeLayout>

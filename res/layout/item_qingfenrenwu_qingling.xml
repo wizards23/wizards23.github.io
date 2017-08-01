@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_item_qingfenrenwu_qingling_orderNumber"
+        android:layout_width="50px"
+        android:layout_height="45px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="47dp"
+        android:background="@drawable/business_number"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="#FFFFFF"
+        android:textSize="35px" />
+
+    <TextView
+        android:id="@+id/tv_item_qingfenrenwu_qingling_xianluName"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:text="西青支行一线"
+        android:textColor="#000000"
+        android:textSize="30px" />
+
+</RelativeLayout>

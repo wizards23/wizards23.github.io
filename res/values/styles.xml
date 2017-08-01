@@ -1,0 +1,75 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="scanTextSize">
+	    <item name="android:textSize">28sp</item>
+	</style>
+    
+    
+    
+
+    
+    
+    
+    <style name="px_45">
+        <item name="android:textSize">45px</item>
+    </style>
+    
+    <!--按钮字体大小 -->
+    <style name="px_35">
+        <item name="android:textSize">35px</item>
+        
+    </style>
+    
+    <!--文本框内字体大小 -->
+    <style name="px_30">
+        <item name="android:textSize">30px</item>        
+    </style>
+    <!--文本框标题字体大小 -->
+     <style name="px_25">
+        <item name="android:textSize">25px</item>        
+    </style>
+    
+    <style name="px_22">
+        <item name="android:textSize">22px</item>        
+    </style>
+    
+    <style name="px_20">
+        <item name="android:textSize">20px</item>        
+    </style>
+    
+    
+    
+    
+    <!--进度条的样式  -->
+	<style name="ProgressBar_Mini">
+    <item name="android:maxHeight">10dip</item>
+    <item name="android:minHeight">8dip</item>
+    <item name="android:indeterminateOnly">false</item>
+    <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+    <item name="android:progressDrawable">@drawable/progress_horizontal_myself</item>
+	</style>
+    
+    
+    
+    
+    
+    
+    
+</resources>

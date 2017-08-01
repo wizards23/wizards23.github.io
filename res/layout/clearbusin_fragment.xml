@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="600px"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:layout_marginRight="8px"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="业务单号:" />
+
+        <TextView
+            android:textColor="@color/back"
+            style="@style/px_22"
+            android:id="@+id/clear_biz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="业务单号"
+             />
+
+    </LinearLayout>
+    
+      <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:layout_marginRight="8px"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清分时间:" />
+
+        <TextView
+            android:textColor="@color/back"
+            style="@style/px_22"
+            android:id="@+id/clear_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="2012-12-12 16:00:00"
+             />
+
+    </LinearLayout>
+    
+       <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:layout_marginRight="8px"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入库钞箱数量:" />
+
+        <TextView
+            android:textColor="@color/back"
+            style="@style/px_22"
+            android:id="@+id/clear_boxnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="4"
+             />
+
+    </LinearLayout>
+    
+        <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/px_25"
+            android:textColor="@color/red"
+            android:layout_marginRight="8px"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入库日期:" />
+
+        <TextView
+            android:textColor="@color/back"
+            style="@style/px_22"
+            android:id="@+id/clear_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="2014-5-5"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>

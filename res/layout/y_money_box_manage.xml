@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/managerparent"
+   
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/blue_title" >
+
+        <LinearLayout
+            android:layout_width="72px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|right" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/out_atm_box" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_marginBottom="15px"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/px_30"
+                android:textColor="@color/white"
+                android:text="钞箱出库" 
+                android:layout_marginTop="25px"
+                android:layout_marginLeft="10px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="63px"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="105px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/refplace_cirle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/back_cirle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/gray_background"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/emptyboxout"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="空钞箱出库"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/emptybox"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/atmaddout"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="ATM加钞出库"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/atmbox"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/notclearout"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="未清回收钞箱出库"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/notclearbox"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/stopout"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="停用钞箱出库"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@color/blue_title" >
+        
+        <LinearLayout
+            android:layout_width="72px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|right" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/back_atm_box" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+              	android:layout_marginTop="10px"
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/px_30"
+                android:textColor="@color/white"
+                android:text="钞箱入库" 
+                android:layout_marginLeft="10px"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_marginTop="15px"
+                android:gravity="center_vertical"
+                android:id="@+id/moneyboxin"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="钞箱装钞入库"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/putinbox"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/backmoneyboxin"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="回收钞箱入库"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/backbox"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/cleanmoneyboxin"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="已清回收钞箱入库"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/clearbox"
+                style="@style/px_25"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:background="@drawable/business_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/addmoneyboxin"
+                style="@style/px_35"
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:singleLine="true"
+                android:text="新增钞箱入库"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

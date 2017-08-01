@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homemenu_box"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00aeFF"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/head_fragment"
+            android:name="com.example.app.fragment.Head_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="50px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="750px"
+        android:layout_weight="1"
+        android:background="#2459b2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="380px"
+            android:layout_height="600px" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lsystemanager"
+                    android:layout_width="190px"
+                    android:layout_height="200px"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/systemanager"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:clickable="true"
+                        android:src="@drawable/system_set_change" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/px_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:text="系统管理"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lcleanadmin"
+                    android:layout_width="190px"
+                    android:layout_height="200px"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/cleanadmin"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:clickable="true"
+                        android:background="@drawable/atmbox_change" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/px_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:text="款箱管理"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lmoney_box_admins"
+                    android:layout_width="190px"
+                    android:layout_height="200px"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/money_box_admins"
+                        android:layout_width="110px"
+                        android:layout_height="110px"
+                        android:clickable="true"
+                        android:background="@drawable/meun_money_change" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/px_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:text="ATM管理"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

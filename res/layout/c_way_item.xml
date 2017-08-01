@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+     >
+
+
+        <LinearLayout
+            android:id="@+id/wayparent"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:background="#f6f6f6"
+            >
+
+            <TextView
+                android:paddingLeft="5px"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:id="@+id/plannumber"
+                style="@style/px_22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f6f6f6"
+                android:gravity="center_vertical"
+                android:text="JN30113243434222"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/plancontent"
+                android:textSize="20px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f6f6f6"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="东丽支行中心库一线"
+                android:textColor="@color/gray" />
+
+            <TextView                
+                android:visibility="gone"
+                android:id="@+id/isfirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.example.app.fragment.Head_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center_vertical"
+        android:background="@color/bule_main" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="款箱明细"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <!-- <ImageView
+            android:id="@+id/mingxi_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="170dp"
+            android:src="@drawable/back_cirle" /> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center_vertical"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:layout_weight="3"
+             >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="网点名称"
+                android:textColor="@color/red"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="箱号"
+                android:textColor="@color/red"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/view_hr_backgroud" />
+
+    <!-- <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="600px" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" > -->
+
+            <ListView
+                android:id="@+id/mingxiView"
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:headerDividersEnabled="false" >
+            </ListView>
+
+        <!-- </LinearLayout>
+    </ScrollView> -->
+
+</LinearLayout>
